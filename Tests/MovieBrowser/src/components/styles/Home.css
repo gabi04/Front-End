@@ -1,0 +1,10 @@
+.home-background {
+    height: 100vh;
+    background-color: var(--my-blue);
+}
+
+#Home .form-control {
+    border: 2px solid black;
+    display: inline;
+    width: 50% !important;
+}

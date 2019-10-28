@@ -1,0 +1,115 @@
+:root{
+ --my-blue: rgb(111, 168, 220);
+}
+/*================ general ================*/
+body, *{
+  font-family: 'Nunito', sans-serif;
+}
+.edge{
+  border: solid;
+}
+h5{
+  font-weight: 600;
+}
+/*=========== margin & padding ===========*/
+.m-20 {
+  margin: 20px;
+}
+
+/*=============== aligment ===============*/
+.center {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-h{
+  text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+
+/*================ navbar =================*/
+.navbar-one{
+  position: relative;
+  display: flex;
+  border: 2px solid black;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  background-color: var(--my-blue);
+}
+.navbar-two{
+  position: relative;
+  display: flex;
+  border: 2px solid black;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-items: inherit !important;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  background-color: var(--my-blue);
+}
+.bg-my-blue{
+  background-color: var(--my-blue);
+}
+.navbar-dark h3{
+  font-weight: 500;
+  color: white;
+}
+.navbar-one .form-control, .navbar-two .form-control{
+  display:inline;
+  width: 50%;
+  border: 2px solid black;
+}
+.navbar-one .radio span, .navbar-two .radio span{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+
+.imgGrid{
+  width: 100%;
+}
+.imgModal{
+  width: 50%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

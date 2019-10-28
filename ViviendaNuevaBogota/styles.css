@@ -1,0 +1,97 @@
+/*
+verde opaco: #D0E5DE
+verde aguamarina: #009688
+verde parques: #00AB01
+gris texto: #B6B6B6
+*/
+
+/*___________________________________________home___________________________________________*/
+/*__________header__________*/
+#homeBut{
+	float: right;
+	margin: 10px 4px 3px;
+}
+
+/*__________search__________*/
+#search{
+	width: 21%;
+	margin: 30px;
+	padding: 5px;
+	float: right;
+}
+#inUno{
+	margin: 0px;
+	background: url(images/img09.gif) repeat-x;
+	font-size: 15px;
+	text-decoration: none;
+	color: #B6B6B6;
+	/*border: 1px #009688 solid;*/
+}
+#inDos{
+	margin: 0px;
+	background: #009688;
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	border: 1px #009688 solid;
+}
+
+/*__________mapa svg__________*/
+#map{
+	float: left;
+	margin: 0px 5px 5px 200px;
+	padding: 0px;
+}
+path:hover{
+	stroke: #009688;
+	stroke-width:3px;
+	stroke-linejoin: round;
+	stroke-opacity: 1;
+	fill: #ffffff;
+}
+#info-box {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background-color: #009688;
+	border: 2px solid #009688;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: arial;
+}
+
+/*__________Divisiones__________*/
+#Opciones, #MapChicago, #Catalogo{
+	float: left;
+	margin: auto;
+}
+
+/*__________Botones__________*/
+#Opciones input{
+	background: #009688;
+	padding: 5px;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+/*__________map google api__________
+#MapChicago{
+}
+
+/*__________catalogue__________
+#Catalogo{
+	/*float: right;
+	margin: 0px;
+	border: solid;
+}*/
+
+
+
+/*___________________________________________Neighborhood__________________________________________*/
+#googleMapRogersPark{
+	margin: auto;
+}
+
+/*____________________________________________Catalogue____________________________________________*/
