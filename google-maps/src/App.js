@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 
-const GOOGLE_MAPS_API_KEY = 'AIzaSyDiof2yAQ3w8b7B_Zh747g2RZGAPdh7oAQ'
+const GOOGLE_MAPS_API_KEY = 
 const INIT_COORDINATES = { lat: 4.6482837, lng: -74.2478919 }
 const MAP_ZOOM = 14
 const AUTOCOMPLETE_RADIUS = 1000
