@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 
-const GOOGLE_MAPS_API_KEY = 
+const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
 const INIT_COORDINATES = { lat: 4.6482837, lng: -74.2478919 }
 const MAP_ZOOM = 14
 const AUTOCOMPLETE_RADIUS = 1000
@@ -24,27 +24,20 @@ const getCityAndCountryFromAutocomplete = addressComponents => {
       }
     })
   }
-  return { city, country }
+  return { city: city || '', country: country || '' }
 }
 
 const getCityAndCountryFromMap = results => {
-  let city, country
+  let city_aux, country_aux
 
   for (let i = 0; i < results.length; i++) {
-    if (results[i].address_components) {
-      results[i].address_components.forEach(component => {
-        if (component.types) {
-          if (component.types.filter(type => type === 'country').length) {
-            country = component.long_name
-          }
-          if (component.types.filter(type => type === 'locality').length) {
-            city = component.long_name
-          }
-        }
-      })
-    }
+    const {city, country} = getCityAndCountryFromAutocomplete(results[i])
+    city_aux = city_aux || city
+    country_aux = country_aux || country
   }
-  return { city: city || '', country: country || '' }
+
+  console.log(city_aux || '', country_aux || '')
+  return { city: city_aux || '', country: country_aux || '' }
 }
 
 const getAddress = async coords => {
