@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/google-maps/node_modules
+/google-maps/.pnp
+/google-maps/.pnp.js
+
+# testing
+/google-maps/coverage
+
+# production
+/google-maps/build
+
+# misc
+/google-maps/.DS_Store
+/google-maps/.env.local
+/google-maps/.env.development.local
+/google-maps/.env.test.local
+/google-maps/.env.production.local
+
+/google-maps/npm-debug.log*
+/google-maps/yarn-debug.log*
+/google-maps/yarn-error.log*
