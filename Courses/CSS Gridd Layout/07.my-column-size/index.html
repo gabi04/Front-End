@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Column Size</title>
+  <style>
+    body{
+      margin: 0
+    }
+    .container{
+      height: 100vh;
+      display: grid;
+      grid-template: repeat(3, 1fr) / 3fr 2fr 1fr 1fr;
+      grid-gap: 5px 5px;
+      grid-template-areas: "header header header header"
+                           "first second third third"
+                           "first second quarter fifth";
+    }
+    .item{
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+    }
+    .item.header{
+      grid-area: header
+    }
+    .item.first{
+      grid-area: first
+    }
+    .item.second{
+      grid-area: second
+    }
+    .item.third{
+      grid-area: third
+    }
+    .item.quarter{
+      grid-area: quarter
+    }
+    .item.fifth{
+      grid-area: fifth
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item header">item 1</div>
+    <div class="item first">item 2</div>
+    <div class="item second">item 3</div>
+    <div class="item third">item 4</div>
+    <div class="item quarter">item 5</div>
+    <div class="item fifth">item 6</div>
+  </div>
+</body>
+</html>

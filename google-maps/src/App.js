@@ -58,7 +58,7 @@ function App () {
     const autocompleteInput = document.getElementById('autocompleteInput')
     const mapDiv = document.getElementById('map')
 
-    map = new window.google.maps.Map(mapDiv, { zoom: MAP_ZOOM, center: INIT_COORDINATES })
+    map = new window.google.maps.Map(mapDiv, { zoom: MAP_ZOOM, center: INIT_COORDINATES, gestureHandling: 'cooperative' })
     marker = new window.google.maps.Marker({ position: INIT_COORDINATES, map })
     autocomplete = new window.google.maps.places.Autocomplete(autocompleteInput)
     autocomplete.setFields(['address_components', 'geometry'])
@@ -73,7 +73,7 @@ function App () {
       marker.setPosition(coords)
     })
 
-    map.addListener('center_changed', async _ => {
+    map.addListener('dragend', async _ => {
       const coords = { lat: map.getCenter().lat(), lng: map.getCenter().lng() }
       const { addressComponents, formattedAddress } = await getAddress(coords)
       const { city, country } = getCityAndCountryFromMap(addressComponents)
@@ -85,9 +85,13 @@ function App () {
   }, [])
 
   useEffect(_ => {
-    const setMapAutoAndcompleteCenter = initCoordinates => {
-      map.setCenter(initCoordinates)
+    const setMapAutoAndcompleteCenter = async initCoordinates => {
       const circle = new window.google.maps.Circle({ center: initCoordinates, radius: AUTOCOMPLETE_RADIUS })
+      const { addressComponents, formattedAddress } = await getAddress(initCoordinates)
+      const { city, country } = getCityAndCountryFromMap(addressComponents)
+      
+      console.log(formattedAddress, city, country, initCoordinates.lat, initCoordinates.lng)
+      map.setCenter(initCoordinates)
       autocomplete.setBounds(circle.getBounds())
     }
 
