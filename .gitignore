@@ -18,6 +18,7 @@
 /google-maps/.env.development.local
 /google-maps/.env.test.local
 /google-maps/.env.production.local
+/google-maps/yarn.lock
 
 /google-maps/npm-debug.log*
 /google-maps/yarn-debug.log*
