@@ -1,0 +1,3 @@
+tener en cuenta para el testeo:
+
+La cantidad de peticiones a servidor, que no lo de parquinson

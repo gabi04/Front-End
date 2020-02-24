@@ -13,6 +13,7 @@
 
 # misc
 /google-maps/.DS_Store
+/google-maps/.env
 /google-maps/.env.local
 /google-maps/.env.development.local
 /google-maps/.env.test.local
@@ -21,3 +22,6 @@
 /google-maps/npm-debug.log*
 /google-maps/yarn-debug.log*
 /google-maps/yarn-error.log*
+
+/Courses/jsbase/node_modules
+/Courses/jsbase/coverage
