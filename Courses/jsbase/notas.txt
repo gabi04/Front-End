@@ -1,3 +1,0 @@
-$ jest src/__test__/index.test.js
-$ sudo npm i -g jest
-$ jest --coverage

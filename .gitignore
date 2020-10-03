@@ -24,5 +24,8 @@
 /google-maps/yarn-debug.log*
 /google-maps/yarn-error.log*
 
-/Courses/jsbase/node_modules
-/Courses/jsbase/coverage
+/Courses/Unit\ Testing\ con\ Jest\ en\ React/jsbase/node_modules
+/Courses/Unit\ Testing\ con\ Jest\ en\ React/jsbase/coverage
+/Courses/Unit\ Testing\ con\ Jest\ en\ React/platzi-store/node_modules
+
+
