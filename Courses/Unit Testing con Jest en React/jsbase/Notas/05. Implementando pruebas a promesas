@@ -1,6 +1,0 @@
-1. test "Probar una promesa" en src/__tests__/global.test.jest
-2. test "Probar async/await" en src/__tests__/global.test.jest
-3. afterEach
-4. afterAll
-5. beforeEach
-6. beforeAll

@@ -1,4 +1,0 @@
-1. test "Arreglo 'fruits' contiene valor 'banana'" en src/__tests__/global.test.jest
-2. test "10 es mayor que 9" en src/__tests__/global.test.jest
-3. test "Verdadero es verdadero" en src/__tests__/global.test.jest
-4. test "Probar un Callback" en src/__tests__/global.test.jest
