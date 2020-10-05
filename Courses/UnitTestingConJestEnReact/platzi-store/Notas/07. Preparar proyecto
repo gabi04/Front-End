@@ -1,0 +1,19 @@
+1. clonar este repo
+2. $ npm install jest enzyme enzyme-adapter-react-16 --save -dev
+3. en package.json agregar
+  {
+    "scripts": {
+      "test": "jest",
+      "test:watch": "jest --watch"
+    }
+  }
+4. crear archivo src/__test__/setUpTest.js y añadir la configuración para usar el adapter de enzyme
+5. en package.json agregar
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ]
+  }
+6. creamos el primer test en src/__test__/components/Footer.test.js
+   que fallo porque el componente tiene estilos y hay que hacer una configuración adicional con los estilos
+   

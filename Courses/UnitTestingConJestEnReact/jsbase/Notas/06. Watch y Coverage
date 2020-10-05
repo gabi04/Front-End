@@ -1,0 +1,13 @@
+1. test del archivo scr/__test__/index.test.js
+2. instalar jest con 
+    $ sudo npm install -g jest
+   para poder correr los test solo sobre el archivo scr/__test__/index.test.js con el comando
+    $ jest scr/__test__/index.test.js
+3. hacer una suit de pruebas con describe en scr/__test__/index.test.js
+4. en package.json
+    "scripts": {
+      "test": "jest",
+      "test:watch": "jest --watch"
+    },
+  para hacer watch con $ npm run test:watch
+5. $ jest --coverage

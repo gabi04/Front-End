@@ -1,0 +1,15 @@
+No podemos trabajar con los estilos de nuestro proyecto, para esto vamos a crear mocks que son funciones que podemos usar para simular
+acciones que tendría que hacer nuestra aplicación:
+1. Crear carpeta src/__mocks__
+2. Crear archivo src/__mocks__/styleMock.js
+3. Agregar al package.json:
+    "jest": {
+      "setupFilesAfterEnv": [
+        "<rootDir>/src/__test__/setupTest.js"
+      ],
+      "moduleNameMapper": {
+        "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
+      }
+    }
+Cunado se esta usando redux tambien es necesario hace un mock:
+4. Crear archivo src/__mocks__/ProviderMock 

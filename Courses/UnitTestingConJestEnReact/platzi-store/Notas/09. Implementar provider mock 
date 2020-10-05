@@ -1,0 +1,2 @@
+1. Crear archivo src/__test__/components/Header.test.js en donde hago de brueva el ProviderMock
+2. Crear archivo src/__test__/components/Product.test.js en donde hago prueba para simular el click de un boton
