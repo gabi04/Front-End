@@ -1,0 +1,4 @@
+1. clases-private.ts
+2. clases-private-ecmascript.ts. Para este es necesario instalar la extensión de VSC 
+   JavaScript and TypeScript Nightly para que tome las indicacines de ecmascript para 
+   TypeScript >= 3.8
