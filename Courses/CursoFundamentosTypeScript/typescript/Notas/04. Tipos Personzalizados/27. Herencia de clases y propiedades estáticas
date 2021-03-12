@@ -1,0 +1,6 @@
+1. clases-herencia.ts
+2. public, private, protected -> modificadores de acceso.
+3. readonly -> propiedades de solo lectura.
+4. static -> propiedades estáticas, se puede definir un miebro visible a nivel de clase. (No entendí esto)
+5. extends -> la herencia de clases se aplica a travez de la palabra extends.
+6. abstract -> para crear clases abstractas.
